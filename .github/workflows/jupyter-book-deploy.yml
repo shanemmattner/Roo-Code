@@ -1,0 +1,50 @@
+name: Deploy Jupyter Book
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - 'docs/book/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          pip install -r docs/book/requirements.txt
+          pip install ghp-import
+
+      - name: Build Book
+        run: |
+          cd docs/book
+          jupyter-book build .
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/book/_build/html
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+
+      - name: Deploy to gh-pages
+        run: |
+          cd docs/book
+          ghp-import -n -p -f _build/html
