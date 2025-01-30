@@ -2,6 +2,15 @@
 
 Welcome to the official documentation for Roo Code, an AI-powered autonomous coding agent that lives in your editor. This documentation will help you understand Roo Code's capabilities, how to use it effectively, and how to extend its functionality.
 
+## Latest Updates
+
+Check out our [What's New](whats-new.md) section to learn about:
+- New task management tools
+- Enhanced editing capabilities
+- Improved mode features
+- Latest provider integrations
+- UI enhancements
+
 ## What is Roo Code?
 
 Roo Code is a powerful AI assistant that can:
@@ -24,17 +33,17 @@ This documentation is organized into several main sections:
 
 ## Quick Links
 
+- [What's New](whats-new.md)
 - [Introduction to Roo Code](introduction.md)
 - [Installation Guide](installation.md)
 - [Quick Start Guide](quick-start.md)
-- [Adaptive Autonomy](adaptive-autonomy.md)
 
 ## Core Features
 
+- [Adaptive Autonomy](adaptive-autonomy.md)
 - [API and Model Support](api-model-support.md)
 - [Custom Modes](custom-modes.md)
 - [Memory Bank](memory-bank.md)
-- [File Operations](file-operations.md)
 
 ## Development Guide
 
@@ -53,4 +62,4 @@ Join our community to get help, share experiences, and stay updated:
 
 ## Next Steps
 
-Ready to get started? Begin with the [Introduction to Roo Code](introduction.md) or jump straight to the [Installation Guide](installation.md) if you're ready to set up Roo Code in your environment.
+Ready to get started? Begin with the [What's New](whats-new.md) section to learn about the latest features, or jump into the [Introduction to Roo Code](introduction.md) for a comprehensive overview. If you're ready to install, head straight to the [Installation Guide](installation.md).
