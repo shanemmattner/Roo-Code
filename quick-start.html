@@ -176,11 +176,22 @@
 </ul>
 </details></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Features</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Core Features</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="adaptive-autonomy.html">Adaptive Autonomy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api-model-support.html">API and Model Support</a></li>
 <li class="toctree-l1"><a class="reference internal" href="custom-modes.html">Custom Modes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="memory-bank.html">Memory Bank</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Development Guide</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="structured-approach.html">Building Advanced Software: A Structured Approach</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning-guide.html">Planning Guide: Beyond Perfect Prompts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mcp-guide.html">Model Context Protocol (MCP) Guide</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Topics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="file-operations.html">File Operations</a></li>
 </ul>
 
     </div>
@@ -406,6 +417,7 @@
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps">Next Steps</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#see-also">See Also</a></li>
 </ul>
             </nav>
         </div>
@@ -419,7 +431,7 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="quick-start-guide">
 <h1>Quick Start Guide<a class="headerlink" href="#quick-start-guide" title="Link to this heading">#</a></h1>
-<p>This guide will help you get up and running with Roo Code quickly, demonstrating basic usage patterns and common workflows.</p>
+<p>This guide will help you get up and running with Roo Code quickly, demonstrating basic usage patterns and common workflows. For detailed installation instructions, see the <a class="reference internal" href="installation.html"><span class="std std-doc">Installation Guide</span></a>.</p>
 <section id="basic-interaction">
 <h2>Basic Interaction<a class="headerlink" href="#basic-interaction" title="Link to this heading">#</a></h2>
 <section id="starting-a-conversation">
@@ -464,7 +476,7 @@
 <h3>Code Mode (Default)<a class="headerlink" href="#code-mode-default" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>General-purpose coding tasks</p></li>
-<li><p>File operations</p></li>
+<li><p><a class="reference internal" href="file-operations.html"><span class="std std-doc">File operations</span></a></p></li>
 <li><p>Terminal commands</p></li>
 <li><p>Browser automation</p></li>
 </ul>
@@ -480,6 +492,7 @@
 <li><p>System design discussions</p></li>
 <li><p>Architecture recommendations</p></li>
 <li><p>Best practices advice</p></li>
+<li><p>See <a class="reference internal" href="structured-approach.html"><span class="std std-doc">Structured Approach</span></a> for details</p></li>
 </ul>
 <p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">User</span><span class="p">:</span> <span class="n">What</span><span class="s1">&#39;s the best way to structure this microservice?</span>
@@ -493,6 +506,7 @@
 <li><p>Technical questions</p></li>
 <li><p>Documentation help</p></li>
 <li><p>Concept explanations</p></li>
+<li><p>See <a class="reference internal" href="planning-guide.html"><span class="std std-doc">Planning Guide</span></a> for effective usage</p></li>
 </ul>
 <p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">User</span><span class="p">:</span> <span class="n">Explain</span> <span class="n">how</span> <span class="n">React</span> <span class="n">hooks</span> <span class="n">work</span>
@@ -505,6 +519,7 @@
 <h2>Common Tasks<a class="headerlink" href="#common-tasks" title="Link to this heading">#</a></h2>
 <section id="file-operations">
 <h3>File Operations<a class="headerlink" href="#file-operations" title="Link to this heading">#</a></h3>
+<p>See <a class="reference internal" href="file-operations.html"><span class="std std-doc">File Operations</span></a> for detailed information about:</p>
 <ul class="simple">
 <li><p>Create new files</p></li>
 <li><p>Modify existing files</p></li>
@@ -544,10 +559,11 @@
 </section>
 <section id="managing-autonomy">
 <h3>Managing Autonomy<a class="headerlink" href="#managing-autonomy" title="Link to this heading">#</a></h3>
+<p>See <a class="reference internal" href="adaptive-autonomy.html"><span class="std std-doc">Adaptive Autonomy</span></a> for details about:</p>
 <ol class="arabic simple">
-<li><p>Start with manual approval</p></li>
-<li><p>Gradually enable auto-approve for trusted operations</p></li>
-<li><p>Maintain control over critical actions</p></li>
+<li><p>Starting with manual approval</p></li>
+<li><p>Gradually enabling auto-approve for trusted operations</p></li>
+<li><p>Maintaining control over critical actions</p></li>
 </ol>
 </section>
 <section id="using-context-mentions">
@@ -566,8 +582,8 @@
 <section id="efficiency-tips">
 <h3>Efficiency Tips<a class="headerlink" href="#efficiency-tips" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
-<li><p>Use appropriate modes for different tasks</p></li>
-<li><p>Leverage auto-approval for routine operations</p></li>
+<li><p>Use appropriate <a class="reference internal" href="custom-modes.html"><span class="std std-doc">Custom Modes</span></a> for different tasks</p></li>
+<li><p>Leverage <a class="reference internal" href="memory-bank.html"><span class="std std-doc">Memory Bank</span></a> for context</p></li>
 <li><p>Combine context mentions for better results</p></li>
 <li><p>Keep development servers running in background</p></li>
 </ol>
@@ -586,10 +602,19 @@
 <h2>Next Steps<a class="headerlink" href="#next-steps" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Explore <a class="reference internal" href="adaptive-autonomy.html"><span class="std std-doc">Adaptive Autonomy</span></a> for more control</p></li>
-<li><p>Learn about <a class="reference internal" href="custom-modes.html"><span class="std std-doc">Custom Modes</span></a></p></li>
-<li><p>Master <a class="reference internal" href="#context-mentions.md"><span class="xref myst">Context Mentions</span></a></p></li>
-<li><p>Join the <a class="reference external" href="https://discord.gg/roocode">Discord community</a> for tips and support</p></li>
+<li><p>Learn about <a class="reference internal" href="api-model-support.html"><span class="std std-doc">API and Model Support</span></a></p></li>
+<li><p>Master <a class="reference internal" href="mcp-guide.html"><span class="std std-doc">MCP Guide</span></a> for extensibility</p></li>
+<li><p>Join our <a class="reference external" href="https://discord.gg/roocode">Discord community</a> for tips and support</p></li>
 </ol>
+</section>
+<section id="see-also">
+<h2>See Also<a class="headerlink" href="#see-also" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="custom-modes.html"><span class="std std-doc">Custom Modes</span></a> for specialized workflows</p></li>
+<li><p><a class="reference internal" href="memory-bank.html"><span class="std std-doc">Memory Bank</span></a> for context management</p></li>
+<li><p><a class="reference internal" href="structured-approach.html"><span class="std std-doc">Structured Approach</span></a> for development methodology</p></li>
+<li><p><a class="reference internal" href="planning-guide.html"><span class="std std-doc">Planning Guide</span></a> for effective task management</p></li>
+</ul>
 </section>
 </section>
 
@@ -691,6 +716,7 @@
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps">Next Steps</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#see-also">See Also</a></li>
 </ul>
   </nav></div>
 

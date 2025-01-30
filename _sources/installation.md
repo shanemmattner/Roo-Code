@@ -37,7 +37,7 @@ There are two ways to open Roo Code:
    - This docks the AI assistant alongside your file explorer
 
 ### API Configuration
-Roo Code supports various AI providers:
+Roo Code supports various AI providers (see [API and Model Support](api-model-support.md) for details):
 - OpenRouter
 - Anthropic
 - Glama
@@ -54,7 +54,7 @@ Configure your preferred provider in the settings:
 3. Select default models for different modes
 
 ### Custom Modes Setup
-To configure custom modes:
+To configure custom modes (see [Custom Modes](custom-modes.md) for details):
 1. Open the Prompts tab
 2. Create new modes or modify existing ones
 3. Set role definitions and allowed tools
@@ -98,6 +98,13 @@ If you encounter problems:
 
 After installation:
 1. Follow the [Quick Start Guide](quick-start.md)
-2. Explore [Adaptive Autonomy](adaptive-autonomy.md) settings
-3. Learn about [Custom Modes](custom-modes.md)
-4. Join the community on [Discord](https://discord.gg/roocode)
+2. Learn about [Adaptive Autonomy](adaptive-autonomy.md)
+3. Explore [Custom Modes](custom-modes.md)
+4. Understand [File Operations](file-operations.md)
+
+## See Also
+
+- [API and Model Support](api-model-support.md) for provider configuration
+- [Memory Bank](memory-bank.md) for context management
+- [MCP Guide](mcp-guide.md) for extending functionality
+- [Structured Approach](structured-approach.md) for development workflow

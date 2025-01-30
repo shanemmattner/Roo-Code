@@ -1,6 +1,6 @@
 # Quick Start Guide
 
-This guide will help you get up and running with Roo Code quickly, demonstrating basic usage patterns and common workflows.
+This guide will help you get up and running with Roo Code quickly, demonstrating basic usage patterns and common workflows. For detailed installation instructions, see the [Installation Guide](installation.md).
 
 ## Basic Interaction
 
@@ -34,7 +34,7 @@ Roo: I'll analyze the function and add try-catch blocks. Here's the proposed cha
 
 ### Code Mode (Default)
 - General-purpose coding tasks
-- File operations
+- [File operations](file-operations.md)
 - Terminal commands
 - Browser automation
 
@@ -48,6 +48,7 @@ Roo: I'll examine the form and add validation...
 - System design discussions
 - Architecture recommendations
 - Best practices advice
+- See [Structured Approach](structured-approach.md) for details
 
 Example:
 ```
@@ -59,6 +60,7 @@ Roo: Let's analyze the requirements...
 - Technical questions
 - Documentation help
 - Concept explanations
+- See [Planning Guide](planning-guide.md) for effective usage
 
 Example:
 ```
@@ -69,6 +71,7 @@ Roo: Hooks are a feature in React that...
 ## Common Tasks
 
 ### File Operations
+See [File Operations](file-operations.md) for detailed information about:
 - Create new files
 - Modify existing files
 - Search across files
@@ -95,9 +98,10 @@ Roo: Hooks are a feature in React that...
 4. Break complex tasks into smaller steps
 
 ### Managing Autonomy
-1. Start with manual approval
-2. Gradually enable auto-approve for trusted operations
-3. Maintain control over critical actions
+See [Adaptive Autonomy](adaptive-autonomy.md) for details about:
+1. Starting with manual approval
+2. Gradually enabling auto-approve for trusted operations
+3. Maintaining control over critical actions
 
 ### Using Context Mentions
 - @file: Include specific file content
@@ -109,8 +113,8 @@ Roo: Hooks are a feature in React that...
 ## Tips and Tricks
 
 ### Efficiency Tips
-1. Use appropriate modes for different tasks
-2. Leverage auto-approval for routine operations
+1. Use appropriate [Custom Modes](custom-modes.md) for different tasks
+2. Leverage [Memory Bank](memory-bank.md) for context
 3. Combine context mentions for better results
 4. Keep development servers running in background
 
@@ -123,6 +127,13 @@ Roo: Hooks are a feature in React that...
 ## Next Steps
 
 1. Explore [Adaptive Autonomy](adaptive-autonomy.md) for more control
-2. Learn about [Custom Modes](custom-modes.md)
-3. Master [Context Mentions](context-mentions.md)
-4. Join the [Discord community](https://discord.gg/roocode) for tips and support
+2. Learn about [API and Model Support](api-model-support.md)
+3. Master [MCP Guide](mcp-guide.md) for extensibility
+4. Join our [Discord community](https://discord.gg/roocode) for tips and support
+
+## See Also
+
+- [Custom Modes](custom-modes.md) for specialized workflows
+- [Memory Bank](memory-bank.md) for context management
+- [Structured Approach](structured-approach.md) for development methodology
+- [Planning Guide](planning-guide.md) for effective task management

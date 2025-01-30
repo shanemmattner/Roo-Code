@@ -24,10 +24,23 @@ This documentation is organized into several main sections:
 
 ## Quick Links
 
+- [Introduction to Roo Code](introduction.md)
 - [Installation Guide](installation.md)
 - [Quick Start Guide](quick-start.md)
-- [Feature Overview](adaptive-autonomy.md)
-- [Development Guide](local-setup.md)
+- [Adaptive Autonomy](adaptive-autonomy.md)
+
+## Core Features
+
+- [API and Model Support](api-model-support.md)
+- [Custom Modes](custom-modes.md)
+- [Memory Bank](memory-bank.md)
+- [File Operations](file-operations.md)
+
+## Development Guide
+
+- [Structured Approach](structured-approach.md)
+- [Planning Guide](planning-guide.md)
+- [MCP Guide](mcp-guide.md)
 
 ## Community and Support
 
@@ -38,6 +51,6 @@ Join our community to get help, share experiences, and stay updated:
 - [Feature Requests](https://github.com/RooVetGit/Roo-Code/discussions/categories/feature-requests)
 - [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.roo-cline)
 
-## License
+## Next Steps
 
-Roo Code is licensed under the [Apache 2.0 License](license.md) © 2025 Roo Veterinary, Inc.
+Ready to get started? Begin with the [Introduction to Roo Code](introduction.md) or jump straight to the [Installation Guide](installation.md) if you're ready to set up Roo Code in your environment.
