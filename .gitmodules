@@ -1,3 +1,0 @@
-[submodule "submodules/jupyter-book-assistant"]
-	path = submodules/jupyter-book-assistant
-	url = git@github.com:shanemmattner/jupyter-book-assistant.git
