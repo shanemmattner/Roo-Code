@@ -2,31 +2,57 @@
 
 This repository includes a Jupyter Book that is automatically built and deployed to GitHub Pages.
 
-## Quick Start
+## Initial Setup
 
-1. Clone this repository:
+1. Clone the repository with submodules:
    ```bash
-   git clone https://github.com/shanemmattner/Roo-Code.git
+   git clone --recursive https://github.com/shanemmattner/Roo-Code.git
    cd Roo-Code
    ```
 
-2. Add or modify content in the `docs/book` directory:
+2. Set up the Jupyter Book environment:
+   ```bash
+   cd submodules/jupyter-book-assistant
+   python3 -m venv venv
+   source venv/bin/activate
+   pip install ghp-import
+   ./setup_submodule.sh
+   ```
+
+## Making Updates to the Book
+
+1. The book content is located in `docs/book/`. You can:
    - Edit existing markdown files (`.md`)
    - Add new markdown files or Jupyter notebooks (`.ipynb`)
    - Update `_toc.yml` to include new files in the table of contents
    - Customize `_config.yml` for book settings
 
-3. Push your changes:
+2. Build the book locally to preview changes:
    ```bash
-   git add .
-   git commit -m "Update book content"
-   git push
+   cd submodules/jupyter-book-assistant
+   source venv/bin/activate
+   ./generate_book.sh
    ```
 
-That's it! The GitHub Actions workflow will automatically:
-- Build your Jupyter Book
-- Deploy it to GitHub Pages
-- Make it available at: https://shanemmattner.github.io/Roo-Code/
+3. View your changes by opening `docs/book/_build/html/index.html` in your browser
+
+## Publishing Changes
+
+When you're ready to publish your changes:
+
+1. Activate the virtual environment and run the generate script:
+   ```bash
+   cd submodules/jupyter-book-assistant
+   source venv/bin/activate
+   ./generate_book.sh
+   ```
+
+2. The script will:
+   - Build the book
+   - Create or update the gh-pages branch
+   - Deploy to GitHub Pages
+
+Your book will be available at: https://shanemmattner.github.io/Roo-Code/
 
 ## Book Structure
 
@@ -39,34 +65,23 @@ docs/book/
 └── notebooks.ipynb   # Example notebook
 ```
 
-## Local Development
-
-If you want to preview changes locally before pushing:
-
-1. Install dependencies:
-   ```bash
-   pip install -r docs/book/requirements.txt
-   ```
-
-2. Build the book:
-   ```bash
-   cd docs/book
-   jupyter-book build .
-   ```
-
-3. Open `_build/html/index.html` in your browser to preview.
-
 ## Troubleshooting
 
-1. **Book not updating?**
-   - Check the Actions tab in GitHub to see if the workflow ran successfully
-   - Ensure your changes are in the `main` branch
-   - Try triggering the workflow manually from the Actions tab
+1. **Missing ghp-import?**
+   ```bash
+   source venv/bin/activate
+   pip install ghp-import
+   ```
 
 2. **Build errors?**
-   - Check the build logs in GitHub Actions
-   - Try building locally to debug issues
+   - Check the build logs in the terminal
    - Ensure all required files are properly referenced in `_toc.yml`
+   - Verify any Jupyter notebooks can execute successfully
+
+3. **Book not updating?**
+   - Make sure you're in the virtual environment (`source venv/bin/activate`)
+   - Run `./generate_book.sh` to rebuild and deploy
+   - Changes should appear on the website within a few minutes
 
 ## Need Help?
 
