@@ -1,39 +1,36 @@
-# Table of contents
-# Learn more at https://jupyterbook.org/customize/toc.html
-
 format: jb-book
 root: intro
 parts:
   - caption: Getting Started
     chapters:
-    - file: whats-new
-    - file: introduction
-      sections:
-      - file: installation
-      - file: quick-start
+      - file: whats-new
+      - file: introduction
+        sections:
+          - file: installation
+          - file: quick-start
 
   - caption: Core Features
     chapters:
-    - file: adaptive-autonomy
-      sections:
-      - file: file-operations
-      - file: command-line
-      - file: browser-automation
-      - file: context-mentions
-    - file: api-model-support
-      sections:
+      - file: adaptive-autonomy
+        sections:
+          - file: file-operations
+          - file: command-line
+          - file: browser-automation
+          - file: context-mentions
+          - file: api-model-support
       - file: custom-modes
-      - file: memory-bank
-      - file: mcp-guide
+        sections:
+          - file: memory-bank
+          - file: mcp-guide
 
   - caption: Development Guide
     chapters:
-    - file: structured-approach
-      sections:
-      - file: planning-guide
-      - file: local-setup
-    
+      - file: structured-approach
+        sections:
+          - file: planning-guide
+          - file: local-setup
+
   - caption: Contributing
     chapters:
-    - file: contributing
-    - file: license
+      - file: contributing
+      - file: license

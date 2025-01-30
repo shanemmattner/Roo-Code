@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: Roo Code Documentation
-author: Roo Veterinary, Inc.
+author: Shane Mattner
 logo: logo.png
 
 # Force re-execution of notebooks on each build.
