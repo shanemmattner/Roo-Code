@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Jupyter Book Documentation &#8212; My sample book</title>
+    <title>Jupyter Book Documentation &#8212; Roo Code Documentation</title>
   
   
   
@@ -146,8 +146,8 @@
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
-    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="My sample book - Home"/>
+    <img src="_static/logo.png" class="logo__image only-light" alt="Roo Code Documentation - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="Roo Code Documentation - Home"/>
   
   
 </a></div>
@@ -164,14 +164,23 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Welcome to your Jupyter Book
+                    Welcome to Roo Code Documentation
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="introduction.html">Introduction to Roo Code</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html">Installation Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quick-start.html">Quick Start Guide</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="adaptive-autonomy.html">Adaptive Autonomy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-model-support.html">API and Model Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom-modes.html">Custom Modes</a></li>
 </ul>
 
     </div>
@@ -364,9 +373,10 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-start">Quick Start</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#initial-setup">Initial Setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-updates-to-the-book">Making Updates to the Book</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publishing-changes">Publishing Changes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#book-structure">Book Structure</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#local-development">Local Development</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting">Troubleshooting</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#need-help">Need Help?</a></li>
 </ul>
@@ -383,16 +393,30 @@
   <section class="tex2jax_ignore mathjax_ignore" id="jupyter-book-documentation">
 <h1>Jupyter Book Documentation<a class="headerlink" href="#jupyter-book-documentation" title="Link to this heading">#</a></h1>
 <p>This repository includes a Jupyter Book that is automatically built and deployed to GitHub Pages.</p>
-<section id="quick-start">
-<h2>Quick Start<a class="headerlink" href="#quick-start" title="Link to this heading">#</a></h2>
+<section id="initial-setup">
+<h2>Initial Setup<a class="headerlink" href="#initial-setup" title="Link to this heading">#</a></h2>
 <ol class="arabic">
-<li><p>Clone this repository:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/shanemmattner/Roo-Code.git
+<li><p>Clone the repository with submodules:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>--recursive<span class="w"> </span>https://github.com/shanemmattner/Roo-Code.git
 <span class="nb">cd</span><span class="w"> </span>Roo-Code
 </pre></div>
 </div>
 </li>
-<li><p>Add or modify content in the <code class="docutils literal notranslate"><span class="pre">docs/book</span></code> directory:</p>
+<li><p>Set up the Jupyter Book environment:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>submodules/jupyter-book-assistant
+python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
+<span class="nb">source</span><span class="w"> </span>venv/bin/activate
+pip<span class="w"> </span>install<span class="w"> </span>ghp-import
+./setup_submodule.sh
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+<section id="making-updates-to-the-book">
+<h2>Making Updates to the Book<a class="headerlink" href="#making-updates-to-the-book" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>The book content is located in <code class="docutils literal notranslate"><span class="pre">docs/book/</span></code>. You can:</p>
 <ul class="simple">
 <li><p>Edit existing markdown files (<code class="docutils literal notranslate"><span class="pre">.md</span></code>)</p></li>
 <li><p>Add new markdown files or Jupyter notebooks (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>)</p></li>
@@ -400,20 +424,36 @@
 <li><p>Customize <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> for book settings</p></li>
 </ul>
 </li>
-<li><p>Push your changes:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>.
-git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Update book content&quot;</span>
-git<span class="w"> </span>push
+<li><p>Build the book locally to preview changes:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>submodules/jupyter-book-assistant
+<span class="nb">source</span><span class="w"> </span>venv/bin/activate
+./generate_book.sh
 </pre></div>
 </div>
 </li>
+<li><p>View your changes by opening <code class="docutils literal notranslate"><span class="pre">docs/book/_build/html/index.html</span></code> in your browser</p></li>
 </ol>
-<p>That’s it! The GitHub Actions workflow will automatically:</p>
+</section>
+<section id="publishing-changes">
+<h2>Publishing Changes<a class="headerlink" href="#publishing-changes" title="Link to this heading">#</a></h2>
+<p>When you’re ready to publish your changes:</p>
+<ol class="arabic">
+<li><p>Activate the virtual environment and run the generate script:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>submodules/jupyter-book-assistant
+<span class="nb">source</span><span class="w"> </span>venv/bin/activate
+./generate_book.sh
+</pre></div>
+</div>
+</li>
+<li><p>The script will:</p>
 <ul class="simple">
-<li><p>Build your Jupyter Book</p></li>
-<li><p>Deploy it to GitHub Pages</p></li>
-<li><p>Make it available at: <a class="reference external" href="https://shanemmattner.github.io/Roo-Code/">https://shanemmattner.github.io/Roo-Code/</a></p></li>
+<li><p>Build the book</p></li>
+<li><p>Create or update the gh-pages branch</p></li>
+<li><p>Deploy to GitHub Pages</p></li>
 </ul>
+</li>
+</ol>
+<p>Your book will be available at: <a class="reference external" href="https://shanemmattner.github.io/Roo-Code/">https://shanemmattner.github.io/Roo-Code/</a></p>
 </section>
 <section id="book-structure">
 <h2>Book Structure<a class="headerlink" href="#book-structure" title="Link to this heading">#</a></h2>
@@ -426,39 +466,27 @@ git<span class="w"> </span>push
 </pre></div>
 </div>
 </section>
-<section id="local-development">
-<h2>Local Development<a class="headerlink" href="#local-development" title="Link to this heading">#</a></h2>
-<p>If you want to preview changes locally before pushing:</p>
-<ol class="arabic">
-<li><p>Install dependencies:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>docs/book/requirements.txt
-</pre></div>
-</div>
-</li>
-<li><p>Build the book:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>docs/book
-jupyter-book<span class="w"> </span>build<span class="w"> </span>.
-</pre></div>
-</div>
-</li>
-<li><p>Open <code class="docutils literal notranslate"><span class="pre">_build/html/index.html</span></code> in your browser to preview.</p></li>
-</ol>
-</section>
 <section id="troubleshooting">
 <h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p><strong>Book not updating?</strong></p>
-<ul class="simple">
-<li><p>Check the Actions tab in GitHub to see if the workflow ran successfully</p></li>
-<li><p>Ensure your changes are in the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch</p></li>
-<li><p>Try triggering the workflow manually from the Actions tab</p></li>
-</ul>
+<ol class="arabic">
+<li><p><strong>Missing ghp-import?</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span><span class="w"> </span>venv/bin/activate
+pip<span class="w"> </span>install<span class="w"> </span>ghp-import
+</pre></div>
+</div>
 </li>
 <li><p><strong>Build errors?</strong></p>
 <ul class="simple">
-<li><p>Check the build logs in GitHub Actions</p></li>
-<li><p>Try building locally to debug issues</p></li>
+<li><p>Check the build logs in the terminal</p></li>
 <li><p>Ensure all required files are properly referenced in <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code></p></li>
+<li><p>Verify any Jupyter notebooks can execute successfully</p></li>
+</ul>
+</li>
+<li><p><strong>Book not updating?</strong></p>
+<ul class="simple">
+<li><p>Make sure you’re in the virtual environment (<code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">venv/bin/activate</span></code>)</p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">./generate_book.sh</span></code> to rebuild and deploy</p></li>
+<li><p>Changes should appear on the website within a few minutes</p></li>
 </ul>
 </li>
 </ol>
@@ -520,9 +548,10 @@ jupyter-book<span class="w"> </span>build<span class="w"> </span>.
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-start">Quick Start</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#initial-setup">Initial Setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-updates-to-the-book">Making Updates to the Book</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publishing-changes">Publishing Changes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#book-structure">Book Structure</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#local-development">Local Development</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting">Troubleshooting</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#need-help">Need Help?</a></li>
 </ul>
@@ -539,7 +568,7 @@ jupyter-book<span class="w"> </span>build<span class="w"> </span>.
   <div class="footer-item">
     
 <p class="component-author">
-By The Jupyter Book Community
+By Roo Veterinary, Inc.
 </p>
 
   </div>

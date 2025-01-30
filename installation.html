@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Notebooks with MyST Markdown &#8212; Roo Code Documentation</title>
+    <title>Installation Guide &#8212; Roo Code Documentation</title>
   
   
   
@@ -60,9 +60,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'markdown-notebooks';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'installation';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Quick Start Guide" href="quick-start.html" />
+    <link rel="prev" title="Introduction to Roo Code" href="introduction.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -113,8 +115,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -169,9 +169,9 @@
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="introduction.html">Introduction to Roo Code</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="installation.html">Installation Guide</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="introduction.html">Introduction to Roo Code</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Installation Guide</a></li>
 <li class="toctree-l2"><a class="reference internal" href="quick-start.html">Quick Start Guide</a></li>
 </ul>
 </details></li>
@@ -257,7 +257,7 @@
       
       
       
-      <li><a href="https://github.com/shanemmattner/Roo-Code/issues/new?title=Issue%20on%20page%20%2Fmarkdown-notebooks.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/shanemmattner/Roo-Code/issues/new?title=Issue%20on%20page%20%2Finstallation.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -287,7 +287,7 @@
       
       
       
-      <li><a href="_sources/markdown-notebooks.md" target="_blank"
+      <li><a href="_sources/installation.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -363,7 +363,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Notebooks with MyST Markdown</h1>
+    <h1>Installation Guide</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -373,9 +373,25 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-example-cell">An example cell</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-notebook-with-myst-markdown">Create a notebook with MyST Markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quickly-add-yaml-metadata-for-myst-notebooks">Quickly add YAML metadata for MyST Notebooks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-methods">Installation Methods</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vs-code-marketplace-recommended">VS Code Marketplace (Recommended)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#open-vsx-registry">Open-VSX Registry</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#manual-installation">Manual Installation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#initial-setup">Initial Setup</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#opening-roo-code">Opening Roo Code</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#api-configuration">API Configuration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#custom-modes-setup">Custom Modes Setup</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verification">Verification</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting">Troubleshooting</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-issues">Common Issues</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-help">Getting Help</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps">Next Steps</a></li>
 </ul>
             </nav>
         </div>
@@ -387,50 +403,152 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="notebooks-with-myst-markdown">
-<h1>Notebooks with MyST Markdown<a class="headerlink" href="#notebooks-with-myst-markdown" title="Link to this heading">#</a></h1>
-<p>Jupyter Book also lets you write text-based notebooks using MyST Markdown.
-See <a class="reference external" href="https://jupyterbook.org/file-types/myst-notebooks.html">the Notebooks with MyST Markdown documentation</a> for more detailed instructions.
-This page shows off a notebook written in MyST Markdown.</p>
-<section id="an-example-cell">
-<h2>An example cell<a class="headerlink" href="#an-example-cell" title="Link to this heading">#</a></h2>
-<p>With MyST Markdown, you can define code cells with a directive like so:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
-</pre></div>
-</div>
-</div>
-</div>
-<p>When your book is built, the contents of any <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> blocks will be
-executed with your default Jupyter kernel, and their outputs will be displayed
-in-line with the rest of your content.</p>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<p>Jupyter Book uses <a class="reference external" href="https://jupytext.readthedocs.io/en/latest/">Jupytext</a> to convert text-based files to notebooks, and can support <a class="reference external" href="https://jupyterbook.org/file-types/jupytext.html">many other text-based notebook files</a>.</p>
-</div>
-</section>
-<section id="create-a-notebook-with-myst-markdown">
-<h2>Create a notebook with MyST Markdown<a class="headerlink" href="#create-a-notebook-with-myst-markdown" title="Link to this heading">#</a></h2>
-<p>MyST Markdown notebooks are defined by two things:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="installation-guide">
+<h1>Installation Guide<a class="headerlink" href="#installation-guide" title="Link to this heading">#</a></h1>
+<p>This guide will walk you through the process of installing and configuring Roo Code in your development environment.</p>
+<section id="installation-methods">
+<h2>Installation Methods<a class="headerlink" href="#installation-methods" title="Link to this heading">#</a></h2>
+<section id="vs-code-marketplace-recommended">
+<h3>VS Code Marketplace (Recommended)<a class="headerlink" href="#vs-code-marketplace-recommended" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
-<li><p>YAML metadata that is needed to understand if / how it should convert text files to notebooks (including information about the kernel needed).
-See the YAML at the top of this page for example.</p></li>
-<li><p>The presence of <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> directives, which will be executed with your book.</p></li>
+<li><p>Open VS Code</p></li>
+<li><p>Click on the Extensions icon in the Activity Bar or press <code class="docutils literal notranslate"><span class="pre">Ctrl+Shift+X</span></code> (<code class="docutils literal notranslate"><span class="pre">Cmd+Shift+X</span></code> on macOS)</p></li>
+<li><p>Search for “Roo Code”</p></li>
+<li><p>Click “Install”</p></li>
 </ol>
-<p>That’s all that is needed to get started!</p>
 </section>
-<section id="quickly-add-yaml-metadata-for-myst-notebooks">
-<h2>Quickly add YAML metadata for MyST Notebooks<a class="headerlink" href="#quickly-add-yaml-metadata-for-myst-notebooks" title="Link to this heading">#</a></h2>
-<p>If you have a markdown file and you’d like to quickly add YAML metadata to it, so that Jupyter Book will treat it as a MyST Markdown Notebook, run the following command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">myst</span> <span class="n">init</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">markdownfile</span><span class="o">.</span><span class="n">md</span>
+<section id="open-vsx-registry">
+<h3>Open-VSX Registry<a class="headerlink" href="#open-vsx-registry" title="Link to this heading">#</a></h3>
+<p>For open-source editors that support Open-VSX:</p>
+<ol class="arabic simple">
+<li><p>Access your editor’s extension marketplace</p></li>
+<li><p>Search for “Roo Code”</p></li>
+<li><p>Install from Open-VSX registry</p></li>
+</ol>
+</section>
+<section id="manual-installation">
+<h3>Manual Installation<a class="headerlink" href="#manual-installation" title="Link to this heading">#</a></h3>
+<p>If you prefer manual installation:</p>
+<ol class="arabic">
+<li><p>Download the <code class="docutils literal notranslate"><span class="pre">.vsix</span></code> file from:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.roo-cline">VS Code Marketplace</a></p></li>
+<li><p><a class="reference external" href="https://open-vsx.org/extension/RooVeterinaryInc/roo-cline">Open-VSX Registry</a></p></li>
+</ul>
+</li>
+<li><p>Drag and drop the <code class="docutils literal notranslate"><span class="pre">.vsix</span></code> file into your editor</p></li>
+<li><p>Or install via command line:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>code<span class="w"> </span>--install-extension<span class="w"> </span>path/to/roo-code-version.vsix
 </pre></div>
 </div>
+</li>
+</ol>
+</section>
+</section>
+<section id="initial-setup">
+<h2>Initial Setup<a class="headerlink" href="#initial-setup" title="Link to this heading">#</a></h2>
+<section id="opening-roo-code">
+<h3>Opening Roo Code<a class="headerlink" href="#opening-roo-code" title="Link to this heading">#</a></h3>
+<p>There are two ways to open Roo Code:</p>
+<ol class="arabic simple">
+<li><p>Click the Roo Code icon in the Activity Bar</p></li>
+<li><p>Use the Command Palette (<code class="docutils literal notranslate"><span class="pre">Cmd/Ctrl</span> <span class="pre">+</span> <span class="pre">Shift</span> <span class="pre">+</span> <span class="pre">P</span></code>):</p>
+<ul class="simple">
+<li><p>Type “Roo Code: Open in New Tab”</p></li>
+<li><p>This docks the AI assistant alongside your file explorer</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="api-configuration">
+<h3>API Configuration<a class="headerlink" href="#api-configuration" title="Link to this heading">#</a></h3>
+<p>Roo Code supports various AI providers:</p>
+<ul class="simple">
+<li><p>OpenRouter</p></li>
+<li><p>Anthropic</p></li>
+<li><p>Glama</p></li>
+<li><p>OpenAI</p></li>
+<li><p>Google Gemini</p></li>
+<li><p>AWS Bedrock</p></li>
+<li><p>Azure</p></li>
+<li><p>GCP Vertex</p></li>
+<li><p>Local models (LM Studio/Ollama)</p></li>
+</ul>
+<p>Configure your preferred provider in the settings:</p>
+<ol class="arabic simple">
+<li><p>Open Roo Code settings</p></li>
+<li><p>Add your API credentials</p></li>
+<li><p>Select default models for different modes</p></li>
+</ol>
+</section>
+<section id="custom-modes-setup">
+<h3>Custom Modes Setup<a class="headerlink" href="#custom-modes-setup" title="Link to this heading">#</a></h3>
+<p>To configure custom modes:</p>
+<ol class="arabic simple">
+<li><p>Open the Prompts tab</p></li>
+<li><p>Create new modes or modify existing ones</p></li>
+<li><p>Set role definitions and allowed tools</p></li>
+<li><p>Configure file access patterns if needed</p></li>
+</ol>
+</section>
+</section>
+<section id="verification">
+<h2>Verification<a class="headerlink" href="#verification" title="Link to this heading">#</a></h2>
+<p>To verify your installation:</p>
+<ol class="arabic simple">
+<li><p>Open Roo Code</p></li>
+<li><p>Type a simple command like “Hello”</p></li>
+<li><p>Confirm you receive a response</p></li>
+<li><p>Try a basic file operation to test workspace access</p></li>
+</ol>
+</section>
+<section id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading">#</a></h2>
+<section id="common-issues">
+<h3>Common Issues<a class="headerlink" href="#common-issues" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>API Connection Problems</strong></p>
+<ul class="simple">
+<li><p>Verify API keys are correctly entered</p></li>
+<li><p>Check network connectivity</p></li>
+<li><p>Ensure API endpoint is accessible</p></li>
+</ul>
+</li>
+<li><p><strong>Extension Not Loading</strong></p>
+<ul class="simple">
+<li><p>Restart VS Code</p></li>
+<li><p>Check VS Code version compatibility</p></li>
+<li><p>Verify extension installation status</p></li>
+</ul>
+</li>
+<li><p><strong>File Access Issues</strong></p>
+<ul class="simple">
+<li><p>Confirm workspace trust settings</p></li>
+<li><p>Check file permissions</p></li>
+<li><p>Verify workspace is open in editor</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="getting-help">
+<h3>Getting Help<a class="headerlink" href="#getting-help" title="Link to this heading">#</a></h3>
+<p>If you encounter problems:</p>
+<ol class="arabic simple">
+<li><p>Check the <a class="reference external" href="https://discord.gg/roocode">Discord community</a></p></li>
+<li><p>Visit <a class="reference external" href="https://www.reddit.com/r/RooCode/">Reddit r/RooCode</a></p></li>
+<li><p>Submit issues on <a class="reference external" href="https://github.com/RooVetGit/Roo-Code/issues">GitHub</a></p></li>
+</ol>
+</section>
+</section>
+<section id="next-steps">
+<h2>Next Steps<a class="headerlink" href="#next-steps" title="Link to this heading">#</a></h2>
+<p>After installation:</p>
+<ol class="arabic simple">
+<li><p>Follow the <a class="reference internal" href="quick-start.html"><span class="std std-doc">Quick Start Guide</span></a></p></li>
+<li><p>Explore <a class="reference internal" href="adaptive-autonomy.html"><span class="std std-doc">Adaptive Autonomy</span></a> settings</p></li>
+<li><p>Learn about <a class="reference internal" href="custom-modes.html"><span class="std std-doc">Custom Modes</span></a></p></li>
+<li><p>Join the community on <a class="reference external" href="https://discord.gg/roocode">Discord</a></p></li>
+</ol>
 </section>
 </section>
 
@@ -464,6 +582,24 @@ See the YAML at the top of this page for example.</p></li>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="introduction.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Introduction to Roo Code</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="quick-start.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Quick Start Guide</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -481,9 +617,25 @@ See the YAML at the top of this page for example.</p></li>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-example-cell">An example cell</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-notebook-with-myst-markdown">Create a notebook with MyST Markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quickly-add-yaml-metadata-for-myst-notebooks">Quickly add YAML metadata for MyST Notebooks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-methods">Installation Methods</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vs-code-marketplace-recommended">VS Code Marketplace (Recommended)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#open-vsx-registry">Open-VSX Registry</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#manual-installation">Manual Installation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#initial-setup">Initial Setup</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#opening-roo-code">Opening Roo Code</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#api-configuration">API Configuration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#custom-modes-setup">Custom Modes Setup</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verification">Verification</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting">Troubleshooting</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-issues">Common Issues</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-help">Getting Help</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps">Next Steps</a></li>
 </ul>
   </nav></div>
 
