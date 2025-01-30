@@ -12,16 +12,14 @@ parts:
   - caption: Core Features
     chapters:
       - file: adaptive-autonomy
-        sections:
-          - file: file-operations
-          - file: command-line
-          - file: browser-automation
-          - file: context-mentions
-          - file: api-model-support
+      - file: file-operations
+      - file: command-line
+      - file: browser-automation
+      - file: context-mentions
+      - file: api-model-support
       - file: custom-modes
-        sections:
-          - file: memory-bank
-          - file: mcp-guide
+      - file: memory-bank
+      - file: mcp-guide
 
   - caption: Development Guide
     chapters:
