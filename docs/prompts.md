@@ -1,17 +1,79 @@
 ---
 title: Prompts
-layout: default
+layout: page
+nav_order: 8
+has_children: true
 ---
 
 # Prompts
 
 ## General Guidelines
 
-Prompts in Roo Code provide a structured way to generate system instructions and guide interactions. This section covers:
+### System Prompt
+- Define core AI behavior
+- Establish interaction framework
+- Set ethical and professional boundaries
+- Configure mode-specific instructions
 
-- **System Prompt:** The primary instructions that define Roo Code's behavior.
-- **Support Prompts:** Auxiliary prompts to assist with troubleshooting and advanced usage.
+### Support Prompts
+- Contextual assistance mechanisms
+- Fallback prompt strategies
+- Intelligent prompt refinement
+
+## Prompt Engineering Techniques
+
+### Effective Prompt Composition
+- Clear and specific instructions
+- Contextual information provision
+- Step-by-step breakdown of tasks
+- Explicit role definition
+
+#### Prompt Structure Template
+```markdown
+[Role]
+You are a [specific role/expert] specializing in [domain].
+
+[Context]
+Given the following project/scenario: [detailed context]
+
+[Objective]
+Your task is to: [specific, measurable goal]
+
+[Constraints]
+- Constraint 1
+- Constraint 2
+
+[Expected Output]
+Provide a response that: [output specifications]
+```
 
 ## User Submitted Prompts
 
-This subsection houses community-contributed prompts, demonstrating creative and effective uses of Roo Code. These user submissions are curated to help inspire and guide new use cases.
+### Community Prompt Repository
+- Curated prompt collection
+- User-contributed templates
+- Categorized by domain and use case
+
+### Prompt Sharing Mechanism
+- Anonymized prompt submission
+- Peer review process
+- Quality assessment criteria
+
+## Advanced Prompt Management
+
+### Prompt Versioning
+- Track prompt evolution
+- Compare different prompt iterations
+- Analyze effectiveness
+
+### Dynamic Prompt Adaptation
+- Context-aware prompt modification
+- Machine learning-based optimization
+- Continuous prompt refinement
+
+## Best Practices
+- Start with clear, concise prompts
+- Provide sufficient context
+- Iterate and refine prompts
+- Leverage community-contributed templates
+- Maintain ethical and professional standards

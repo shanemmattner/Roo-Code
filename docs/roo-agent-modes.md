@@ -1,24 +1,63 @@
 ---
 title: Roo Agent Modes
-layout: default
+layout: page
+nav_order: 6
+has_children: true
 ---
 
 # Roo Agent Modes
 
-This section outlines the various operating modes of Roo Agent. It includes details on the default modes as well as custom modes that you can configure to suit your workflow.
-
 ## Default Modes
 
-Roo Agent comes pre-configured with a set of default modes that cover common functionalities such as code analysis, architectural guidance, and problem solving.
+### Core Modes Overview
+- **Code Mode**: Advanced code generation and editing
+- **Architect Mode**: System design and high-level technical guidance
+- **Ask Mode**: Technical information and Q&A assistance
+- **Design Mode**: UI/UX and design system development
 
 ## Custom Modes
 
-Users can define custom modes to tailor Roo Agent's behavior to specific tasks. This allows you to configure role-specific settings, create mode-specific instructions, and implement project-specific workflows. Examples of custom modes and their configurations are provided to illustrate different setups.
+### Creating Custom Modes
+- Define unique mode characteristics
+- Specify tool group access
+- Configure mode-specific instructions
 
-## Custom Instructions
+#### Custom Mode Structure
+```json
+{
+  "slug": "designer",
+  "name": "Designer",
+  "roleDefinition": "UI/UX expert specializing in design systems",
+  "groups": [
+    "read",
+    "edit",
+    "browser"
+  ],
+  "customInstructions": "Focus on design consistency and user experience"
+}
+```
 
-Custom instructions help refine the output of Roo Agent. This section covers:
-- **Master Instructions:** High-level directives that guide the overall behavior of Roo Agent.
-- **Mode Specific Instructions:** Detailed instructions tailored for different operational modes.
+### Mode-Specific Instructions
 
-Explore these modes and instructions to maximize the utility of Roo Agent in your projects.
+#### Master Instructions
+- Define core behavior
+- Set context and capabilities
+- Establish mode boundaries
+
+##### Mode Specific Details
+- Unique prompt templates
+- Specialized tool access
+- Contextual understanding
+
+## Mode Switching
+
+### Dynamic Mode Management
+- Seamless transitions between modes
+- Context preservation
+- Intelligent mode recommendation
+
+## Best Practices
+- Choose the right mode for your task
+- Leverage mode-specific capabilities
+- Experiment with custom mode configurations
+- Regularly update mode definitions

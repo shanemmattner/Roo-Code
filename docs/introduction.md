@@ -1,10 +1,23 @@
 ---
 title: Introduction
-layout: default
+layout: page
+nav_order: 2
 ---
 
-# Introduction
+# Introduction/Overview
 
-## Overview
+## Project Purpose
 
-This section provides an overview of Roo Code, outlining its purpose, key features, and overall vision. Use this area to understand the high-level goals of Roo Code and how it aims to empower developers with streamlined tooling and documentation.
+Roo Code is an innovative VS Code plugin designed to enhance coding workflows through AI-powered automation and multi-model support.
+
+## Key Features
+
+- Multi-model AI support
+- Intelligent code automation
+- Flexible agent modes
+- Advanced prompt management
+- MCP (Model Context Protocol) server integration
+
+## Why Roo Code?
+
+Roo Code aims to revolutionize the coding experience by providing intelligent, context-aware assistance across various programming tasks and environments.

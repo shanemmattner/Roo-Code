@@ -1,37 +1,152 @@
 ---
 title: FAQs
-layout: default
+layout: page
+nav_order: 19
 ---
 
-# FAQs
+# Frequently Asked Questions
 
-This section provides answers to the most frequently asked questions about ROO Code.
+## TLDR: Quick Model Capabilities
 
-## General Questions
+### Browser and Workspace File Access
+- **Currently Supported Models:**
+  * Claude Sonnet 3.5
+  * Google Gemini
+  * GPT-4o
 
-**Q1: What is ROO Code?**  
-**A1:** ROO Code is a documentation and tooling platform designed to streamline development workflows and provide architectural guidance.
+**Note:** As more models continue to advance in this area, we'll update this FAQ accordingly.
 
-**Q2: How do I install ROO Code?**  
-**A2:** Follow the instructions in the Getting Started section for installation details and initial queries.
+## Getting Started
 
-## Configuration and Usage
+### What is Roo Code?
+- AI-powered VS Code extension
+- Intelligent coding assistant
+- Multi-model support
+- Advanced development workflow enhancement
 
-**Q3: How do I configure API settings?**  
-**A3:** The API Configuration section covers profiles, integrations, and rate limit controls.
+### Supported Platforms
+- Windows
+- macOS
+- Linux
+- VS Code (version 1.80+)
 
-**Q4: What are the different agent modes?**  
-**A4:** Refer to the Roo Agent Modes section for details about default and custom modes.
+## Model and Provider Questions
 
-## Community and Contributions
+### How Many AI Models Are Supported?
+- Multiple providers
+- Includes OpenAI, Anthropic, Google, Mistral
+- Continuous expansion of supported models
 
-**Q5: How can I contribute to ROO Code?**  
-**A5:** Contributions are welcome! Refer to the Contributing section for guidelines on reporting issues and submitting improvements.
+### Can I Use Multiple Models?
+- Yes, dynamic model switching
+- Configure multiple provider credentials
+- Intelligent model recommendation
 
-**Q6: Where can I find user-submitted resources?**  
-**A6:** Check the Community Submissions section for community contributions like custom prompts and configurations.
+## Technical Capabilities
+
+### What Languages Are Supported?
+- Python
+- JavaScript/TypeScript
+- Java
+- C++
+- Go
+- Rust
+- And more...
+
+### How Does Code Indexing Work?
+- Semantic code analysis
+- Abstract Syntax Tree parsing
+- Cross-file dependency tracking
+
+## Workspace and File Interactions
+
+### External Workspace File Access
+- Limited to specific models
+- Requires explicit model support
+- Security and privacy considerations
+
+### Supported File Access Methods
+- Relative file paths
+- Specific model capabilities
+- Configurable security settings
+
+## Performance and Cost
+
+### How Are Tokens Tracked?
+- Per-provider token tracking
+- Real-time usage monitoring
+- Configurable cost alerts
+
+### Can I Limit AI Interaction Costs?
+- Set budget thresholds
+- Provider-specific rate limits
+- Detailed cost breakdown
+
+## Privacy and Security
+
+### How Secure Is My Code?
+- Local processing
+- Optional cloud analysis
+- Configurable privacy settings
+- No permanent code storage
+
+### Data Handling
+- Ephemeral context management
+- No persistent code storage
+- User-controlled data sharing
 
 ## Troubleshooting
 
-**Q7: What should I do if I encounter an issue?**  
-**A7:** Review the troubleshooting tips in the documentation and join the community discussions for support.
+### Installation Issues
+- Check VS Code version
+- Verify provider credentials
+- Review extension logs
+- Community support channels
+
+### Performance Problems
+- Update to latest version
+- Check system requirements
+- Clear extension cache
+- Disable conflicting extensions
+
+## Community and Support
+
+### How Can I Contribute?
+- GitHub repository
+- Pull request process
+- Community guidelines
+- Regular contributor recognition
+
+### Support Channels
+- GitHub Discussions
+- Discord Community
+- Official Documentation
+- Weekly Community Calls
+
+## Experimental Features
+
+### What Are MCP Servers?
+- Extensible AI service infrastructure
+- Custom tool development
+- Dynamic capability expansion
+
+## Best Practices
+
+### Recommended Usage
+- Start with default settings
+- Experiment gradually
+- Provide feedback
+- Stay updated
+
+## Future Development
+
+### Upcoming Features
+- More model support
+- Advanced code generation
+- Improved context understanding
+- Community-driven innovations
+
+## Disclaimer
+- Features may vary by model
+- Continuous improvement
+- Community-powered development

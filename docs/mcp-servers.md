@@ -1,18 +1,77 @@
 ---
 title: MCP Servers
-layout: default
+layout: page
+nav_order: 9
+has_children: true
 ---
 
-# MCP Servers
+# MCP (Model Context Protocol) Servers
 
-This section introduces MCP Servers, powerful integrations that enable Roo Code to communicate with external systems. Learn how to extend Roo Code through additional tools and resources provided via MCP Servers.
+## Introduction
 
-## An Introduction
+### What are MCP Servers?
+- Extensible AI service infrastructure
+- Modular tool and resource providers
+- Standardized communication protocol
+- Dynamic capability expansion
 
-Understand the fundamentals of MCP Servers, why they are useful, and how they serve as secret weapons for enhancing Roo Code capabilities.
+## Secret Weapons for ROO
+
+### Core MCP Server Capabilities
+- External API integration
+- Custom tool creation
+- Resource management
+- Contextual service provision
+
+#### Example MCP Server Structure
+```typescript
+class WeatherServer {
+  // Provides weather-related tools and resources
+  tools: {
+    get_forecast: (city: string, days: number) => WeatherData;
+  }
+  resources: {
+    current_weather: (city: string) => WeatherReport;
+  }
+}
+```
 
 ## User Submitted MCP Servers
 
-Community contributions in the form of user submitted MCP Server configurations are curated here. These submissions offer alternative integrations and creative solutions for extending Roo Code.
+### Community-Driven Extensions
+- Open-source MCP server contributions
+- Vetted and reviewed implementations
+- Diverse functionality showcase
 
-Explore examples, detailed guides, and integration instructions to get the most out of MCP Servers.
+### Submission Guidelines
+- Clear documentation
+- Robust error handling
+- Performance considerations
+- Security best practices
+
+## MCP Server Types
+
+### Tool-Based Servers
+- Executable functionality providers
+- Dynamic parameter handling
+- Standardized input/output schemas
+
+### Resource-Based Servers
+- Static and dynamic data sources
+- Cacheable information
+- Versioned resource management
+
+## Advanced Integration
+
+### Development Techniques
+- TypeScript/JavaScript implementation
+- Stdin/stdout communication
+- Secure token management
+- Scalable architecture
+
+## Best Practices
+- Start with simple, focused servers
+- Implement comprehensive error handling
+- Prioritize security
+- Design for extensibility
+- Contribute to community repository
